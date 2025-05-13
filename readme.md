@@ -1,0 +1,1 @@
+# Learning Javascript with some basic project
