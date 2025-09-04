@@ -1,0 +1,146 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+}
+
+
+
+#navbar{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5px;
+  border-bottom: 1px solid ;
+  background-color: rgb(58, 57, 57);
+  color: white;
+  padding: 10px 10px;
+  margin-bottom: 30px;
+}
+
+#navbar #searchfield{
+  width: 50%;
+  display: flex;
+  gap:5px;
+}
+
+#navbar #searchfield input{
+flex-grow: 2;
+font-size: 18px;
+outline: none;
+border-radius: 10px;
+padding: 2px 8px;
+background-color: transparent;
+color: white;
+border: 1px solid white
+}
+#navbar #searchfield input::placeholder{
+  color: rgb(255, 254, 254);
+}
+
+#navbar #searchfield button{
+  /* flex-grow: 1; */
+  padding: 0 20px;
+  font-size: 20px;
+  outline: none;
+border-radius: 10px;
+padding: 2px 8px;
+}
+
+
+
+.book-library {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.book-card {
+  background: #535050;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+}
+
+.book-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.book-info {
+  padding: 15px;
+}
+
+.book-info h2 {
+  font-size: 18px;
+  margin: 0 0 8px;
+  color: #f7f7f7;
+}
+
+.book-info .author {
+  font-size: 14px;
+  color: #ffffff;
+  margin-bottom: 5px;
+}
+
+.book-info .price {
+  font-size: 16px;
+  font-weight: bold;
+  color: #0ff80f;
+  margin: 5px 0;
+}
+
+.book-info .desc {
+  font-size: 14px;
+  color: #efefef;
+  margin: 10px 0;
+  max-height: 60px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.buttons a {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 8px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.buttons a:first-child {
+  background: #007bff;
+  color: white;
+}
+
+.buttons a:first-child:hover {
+  background: #0056b3;
+}
+
+.buttons a:last-child {
+  background: #16d743;
+  color: white;
+}
+
+.buttons a:last-child:hover {
+  background: #1e7e34;
+}
