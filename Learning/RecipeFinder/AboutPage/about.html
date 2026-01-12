@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff7f0;
+      color: #5a3e1b;
+    }
+
+    header {
+      width: 100%;
+      background-color: #f5f5f5;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    /* Logo */
+    .logo h1 {
+      font-size: 24px;
+      color: #333;
+    }
+
+    /* Center nav links */
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      justify-content: center;
+      flex: 1;
+    }
+
+    .nav-links h4 {
+      cursor: pointer;
+      font-size: 18px;
+      color: #444;
+      transition: color 0.3s;
+    }
+
+    .nav-links h4:hover {
+      color: #0077ff;
+    }
+
+    /* Right side */
+    .browse h2 {
+      font-size: 20px;
+      color: #0077ff;
+      cursor: pointer;
+    }
+
+    /* About Section */
+    .about-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background: #fff1df;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgb(90 62 27 / 0.2);
+      display: flex;
+      gap: 25px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .about-text {
+      flex: 1 1 400px;
+    }
+
+    .about-text h2 {
+      font-size: 2.8rem;
+      margin-bottom: 12px;
+      color: #a64b06;
+    }
+
+    .about-text p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+
+    .about-image {
+      flex: 1 1 400px;
+      text-align: center;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 18px;
+      box-shadow: 0 6px 15px rgba(166, 75, 6, 0.3);
+    }
+
+    /* ✅ Responsive */
+    @media (max-width: 768px) {
+      .navbar {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+
+      .nav-links {
+        margin: 15px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body onload="loadNavbar()">
+  
+  <!-- Navbar will load here -->
+  <div id="navbar-container"></div>
+
+  
+  <div class="about-section">
+    <div class="about-text">
+      <h2>About Our Recipes</h2>
+      <p>Discover the joy of cooking with our carefully curated recipes that bring flavor, tradition, and creativity to your kitchen. Whether you are a beginner or a seasoned chef, our step-by-step guides and tips help you make every meal delicious and memorable.</p>
+    </div>
+    <div class="about-image">
+      <img src="https://user-gen-media-assets.s3.amazonaws.com/gpt4o_images/fa8cee86-1d1d-4cae-9fee-d766ce18d71b.png" alt="Delicious Food" />
+    </div>
+  </div>
+
+  <h1 style="text-align:center; margin:40px 0; color:#a64b06;">About Page</h1>
+
+  
+  <script src="../navbar.js"></script>
+</body>
+</html>

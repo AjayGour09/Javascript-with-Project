@@ -1,0 +1,99 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 20px;
+}
+#logo{
+    font-size: 20px;
+    font-weight: 800;
+    color: #4790cc;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+}
+#logo:hover{
+    color: #3f84bd;
+}
+input{
+    width: 800px;
+    height: 50px;
+    border-radius: 20px;
+    padding: 10px;
+    font-size: 20px;
+    color: #545151;
+    background-color: aqua;
+    border: none;
+}
+.design{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+button{
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    color: white;
+    background-color: rgb(210, 12, 12) ;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+  }
+
+  button:hover{
+     background-color: rgba(194, 11, 11, 0.775) ;
+  }
+#jobs {
+  width: 100%;
+  /* min-height: 80vh; */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+.job-card {
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+.job-card h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+.job-card p {
+  margin: 5px 0;
+  color: #555;
+}
+.apply {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 12px;
+  background: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #0077ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: spin 0.3s linear infinite;
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

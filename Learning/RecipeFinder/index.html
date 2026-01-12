@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header>
+  <nav class="navbar">
+    <!-- Left Logo -->
+    <div class="logo">
+      <h1>Mylog</h1>
+    </div>
+
+    <!-- Center Nav Links -->
+    <div class="nav-links" id="routes">
+      <h4 onclick="goToPage('HomePage/Home.html')">Home</h4>
+      <h4 onclick="goToPage('AboutPage/about.html')">About</h4>
+      <h4 onclick="goToPage('ContactPage/contact.html')">Contact</h4>
+    </div>
+
+    <!-- Right Browse -->
+    <div class="browse">
+      <h2>Browse recipe</h2>
+    </div>
+  </nav>
+</header>
+
+<script>
+    
+// const H4s = document.querySelectorAll('h4')
+// H4s.forEach((item)=>{
+//     item.addEventListener('click',()=>{
+//         if(item.textContent.toLowerCase() == "home"){
+//              window.location.href = `./HomePage/${item.textContent}.html`
+//         }else if(item.textContent.toLowerCase() == "about"){
+//              window.location.href = `./AboutPage/${item.textContent}.html`
+//         }else if(item.textContent.toLowerCase() == "contact"){
+//              window.location.href = `./ContactPage/${item.textContent}.html`
+//         }
+//     })
+// })
+
+  function goToPage(value) {
+    window.location.href = `./${value}`
+  }
+
+
+
+</script>
+    
+</script>
+</body>
+</html>

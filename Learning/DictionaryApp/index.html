@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Modern Dictionary — hello</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+   <div class="container">
+<div class="searchbar">
+<input type="text" id="searchInput" placeholder="Search a word...">
+<button id="searchBtn">Search</button>
+</div>
+
+
+<div class="app" id="app" role="main">
+<div class="card" id="left">
+<div class="word-row">
+<div>
+<div class="word-title" id="word">—</div>
+<div class="phonetic" id="phonetic"></div>
+</div>
+</div>
+<div class="muted" style="margin-top:12px">Phonetics & audio</div>
+<div class="audio-list card" id="audioList" role="list"></div>
+<div class="muted" style="margin-top:16px">License & source</div>
+<div class="meta" style="margin-top:8px">
+<div class="chip" id="license">—</div>
+<a id="sourceLink" class="chip source" target="_blank" rel="noopener">—</a>
+</div>
+</div>
+<div class="card" id="right">
+<div style="font-size:18px;font-weight:600;margin-bottom:8px">Meanings</div>
+<div class="meanings" id="meanings"></div>
+<footer class="small">Powered by dictionaryapi.dev</footer>
+</div>
+</div>
+</div>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>
